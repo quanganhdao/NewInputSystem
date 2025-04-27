@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca2978767c10a54fb7331e96499fa15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActionReference: {fileID: 0}
+  inputActionReference: {fileID: -7648312639901048939, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
   useModifier: 0
 --- !u!1 &1897318138
 GameObject:
