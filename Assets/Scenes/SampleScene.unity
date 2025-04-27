@@ -289,7 +289,9 @@ MonoBehaviour:
   attackAction: {fileID: -7648312639901048939, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
   defendAction: {fileID: -2212110006179729377, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
   crouchAction: {fileID: -1828909463296262483, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
-  moveAction: {fileID: 0}
+  moveAction: {fileID: 4385915017669677882, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
+  combinedKeyAction: {fileID: -1828909463296262483, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
+  ultimatePowerAction: {fileID: 3636960143974203491, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
   onDoubleTab:
     m_PersistentCalls:
       m_Calls:
@@ -306,7 +308,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   objectToToggle: {fileID: 705507993}
-  combinedKeyAction: {fileID: -1828909463296262483, guid: 1ebe2cff1c764dd4bb140e2ddd1b23b3, type: 3}
 --- !u!4 &413451666
 Transform:
   m_ObjectHideFlags: 0
