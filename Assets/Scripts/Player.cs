@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -14,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] InputActionReference moveAction;
     [SerializeField] private UnityEvent onDoubleTab;
     [SerializeField] private GameObject objectToToggle;
+    [SerializeField] private InputActionReference combinedKeyAction;
 
 
     // Start is called before the first frame update
@@ -35,19 +34,6 @@ public class Player : MonoBehaviour
             Debug.Log("Double tab action performed");
 
         }
-        if (doubleTab.action.WasReleasedThisFrame())
-        {
-            Debug.Log("Double tab action released");
-        }
-        if (doubleTab.action.WasCompletedThisFrame())
-        {
-            Debug.Log("Double tab action completed");
-        }
-        if (doubleTab.action.WasPressedThisFrame())
-        {
-
-            Debug.Log("Double tab action pressed");
-        }
 
         if (attackAction.action.WasPerformedThisFrame())
         {
@@ -56,6 +42,10 @@ public class Player : MonoBehaviour
         if (defendAction.action.WasPerformedThisFrame())
         {
             Debug.Log("Defend action performed");
+        }
+        if (combinedKeyAction.action.WasPerformedThisFrame())
+        {
+            Debug.Log("Combined key action performed");
         }
 
         // Debug.Log("Move action value: " + moveAction.action.ReadValue<Vector2>());
