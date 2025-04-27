@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private InputActionAsset inputActions;
     [SerializeField] InputActionReference doubleTab;
     [SerializeField] InputActionReference attackAction;
     [SerializeField] InputActionReference defendAction;
@@ -18,6 +19,10 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    }
+    void Awake()
+    {
+        inputActions.LoadBindingOverridesFromJson(PlayerPrefs.GetString(inputActions.name));
 
     }
 
@@ -53,7 +58,7 @@ public class Player : MonoBehaviour
             Debug.Log("Defend action performed");
         }
 
-        Debug.Log("Move action value: " + moveAction.action.ReadValue<Vector2>());
+        // Debug.Log("Move action value: " + moveAction.action.ReadValue<Vector2>());
     }
     public void ToggleObject()
     {
